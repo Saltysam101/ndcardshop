@@ -1,9 +1,9 @@
-
+import Shop from './pages/shop';
 
 function App() {
   return (
     <div className="">
-      <h3>Hello There!</h3>
+      <Shop />
     </div>
   );
 }
