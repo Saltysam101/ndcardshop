@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export default function Nav() {
     return (
         <div>
-            <nav className="flex justify-between items-center h-16 w-screen bg-gray-900 text-white">
+            <nav className="flex justify-between items-center h-16 w-screen bg-lightgrey text-white">
                 <div className="flex">
                     <h2 className="mx-6">Logo</h2>
                     <h4 className="">Store Name</h4>
@@ -20,7 +20,9 @@ export default function Nav() {
                         <h3 className="hidden md:block mr-6">Account</h3>
                     </div>
                 </div>
-            </nav>    
+            </nav> 
+
+            <nav className="md:hidden"></nav>   
         </div>
     )
 }
