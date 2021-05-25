@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
     return (
-        <div>
-            <nav className="flex justify-between items-center h-16 w-screen bg-lightgrey text-white">
+        
+        <div className="">
+            <nav className="flex justify-between items-center h-16 w-screen bg-lightgrey text-white fixed top-0 z-10">
                 <div className="flex">
                     <h2 className="mx-6">Logo</h2>
                     <h4 className="">Store Name</h4>
@@ -21,8 +23,11 @@ export default function Nav() {
                     </div>
                 </div>
             </nav> 
-
-            <nav className="md:hidden"></nav>   
+            <nav className="bg-lightgrey fixed bottom-0 h-16 w-screen z-10 text-white flex justify-evenly items-center md:hidden">
+                <h3>Account</h3>
+                <h3>Cart</h3>
+            </nav>
+   
         </div>
     )
 }
