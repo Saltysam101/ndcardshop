@@ -20,7 +20,9 @@ export default function Nav() {
                     className="mr-6 md:mr-0"    
                     />
                     <div className="flex">
-                        <h3 className="hidden md:block mx-6">Cart</h3>
+                        <Link to="/cart">
+                            <h3 className="hidden md:block mx-6">Cart</h3>
+                        </Link>    
                         <Link to="/account">
                             <h3 className="hidden md:block mr-6">Account</h3>
                         </Link>
@@ -31,7 +33,9 @@ export default function Nav() {
                 <Link to="/account">
                     <h3>Account</h3>
                 </Link>
-                <h3>Cart</h3>
+                <Link to="/cart">
+                    <h3>Cart</h3>
+                </Link>
             </nav>
    
         </div>
