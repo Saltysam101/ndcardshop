@@ -20,6 +20,10 @@ export default function cart() {
                     <h3 className="text-xl ml-4 mt-6 md:hidden">$49.99</h3>
                 </div>
             </div>
+            <div className="w-44 absolute left-2/3 top-3/4 lg:left-3/4">
+                <h2 className="text-xl">Your total: $49.99</h2>
+                <button className="bg-green-500 w-40 text-lg font-bold tracking-widest">Checkout</button>
+            </div>
         </div>
     )
 }
